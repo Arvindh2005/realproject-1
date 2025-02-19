@@ -27,7 +27,7 @@ import java.util.List;
         query = "SELECT u FROM User u WHERE u.id != :publicId"
 )
 @NamedQuery(
-        name = UserConstants.FIND_USER_BY_ID,
+        name = UserConstants.FIND_USER_BY_PUBLIC_ID,
         query = "SELECT u FROM User u WHERE u.id = :publicId"
 )
 public class User extends BaseAuditingEntity {
